@@ -559,7 +559,7 @@ class Point(GraphicsObject):
         
     def _draw(self, canvas, options):
         x,y = canvas.toScreen(self.x,self.y)
-        return canvas.create_rectangle(x,y,x+3,y+3,options)
+        return canvas.create_rectangle(x,y,x+6,y+6,options)
         
     def _move(self, dx, dy):
         self.x = self.x + dx
