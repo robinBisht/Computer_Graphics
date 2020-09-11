@@ -45,4 +45,7 @@ def MidPointCircle(xc,yc,r):
 
 if __name__ == "__main__":
 	# MidPointCircle(250,250,10)
-	MidPointCircle(0,0,100)
+	x = int(input( "Enter x: " ))
+	y = int(input( "Enter y: " ))
+	r = int(input( "Enter radius: " ))
+	MidPointCircle(x,y,r)

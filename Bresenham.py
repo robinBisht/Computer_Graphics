@@ -29,4 +29,9 @@ def Bresenham(x1,y1,x2,y2):
 	win.getMouse()
 	win.close()
 
-Bresenham(10,10,150,150)
+if __name__ == '__main__':
+	x1 = int(input( "Enter x1: " ))
+	y1 = int(input( "Enter y1: " ))
+	x2 = int(input( "Enter x2: " ))
+	y2 = int(input( "Enter y2: " ))
+	Bresenham(x1,y1,x2,y2)
