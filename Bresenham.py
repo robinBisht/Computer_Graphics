@@ -1,12 +1,15 @@
 from graphics import *
 from time import sleep
 
-
+def plotPoint(x,y,wi):
+	pt = Point(round(x),round(y))
+	pt.setFill("blue")
+	pt.draw(wi)
 
 def Bresenham(x1,y1,x2,y2):
-	win = GraphWin("DDA",500,500)
+	win = GraphWin("DDA",600,600)
 	win.setBackground(color_rgb(0,0,0))
-
+	win.setCoords(-300,-300,300,300)
 	x = x1
 	y = y1
 
@@ -14,9 +17,7 @@ def Bresenham(x1,y1,x2,y2):
 	dy = y2-y1
 	p = 2*dx-dy
 	while(x <= x2):
-		pt = Point(x,y)
-		pt.setFill("blue")
-		pt.draw(win)
+		plotPoint(x,y,win)
 		x+=1
 		if(p<0):
 			p = p+2*dy
